@@ -59,6 +59,7 @@ app.get("/portfolios", async (req, res) => {
       const portfolio = {
         user_id: profile.id,
         name: profile.name,
+        email: profile.email,
         tickers: userTickers,
         options: userOptions,
       };
